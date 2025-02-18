@@ -45,11 +45,13 @@ class DetallePelicula : AppCompatActivity() {
             buyTickets.isEnabled=false
         }else{
             buyTickets.setOnClickListener{
+                buyTickets.isEnabled=true
                 val intent:Intent=Intent(this, SeatSelection::class.java)
 
                 intent.putExtra("id", id)
                 intent.putExtra("name", title)
 
+                this.startActivity(intent)
             }
         }
 
