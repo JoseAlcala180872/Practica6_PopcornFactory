@@ -7,6 +7,9 @@ android {
     namespace = "alcala.jose.popcornfactory"
     compileSdk = 35
 
+    viewBinding {
+        enable=true
+    }
     defaultConfig {
         applicationId = "alcala.jose.popcornfactory"
         minSdk = 21

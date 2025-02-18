@@ -6,8 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/nigga"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peliculas"
+            android:textSize="20sp"
+            android:textColor="@color/amarillo"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
 
+    </LinearLayout>
     <GridView
         android:id="@+id/gridview"
         android:numColumns="3"
